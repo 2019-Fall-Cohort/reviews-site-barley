@@ -4,6 +4,17 @@
     flex-direction: column;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+H1 {
+    display: flex;
+    justify-content: center;
+}
+
 li {   
     list-style: none;
 }
