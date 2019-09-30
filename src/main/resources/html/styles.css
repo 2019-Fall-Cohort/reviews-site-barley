@@ -1,0 +1,16 @@
+
+.beer-category {
+    display: flex;
+    flex-direction: column;
+}
+
+li {   
+    list-style: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
