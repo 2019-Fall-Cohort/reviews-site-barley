@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
 
 :root {
     --roboto: 'Roboto', sans-serif;
+    --catamaran: 'Catamaran', sans-serif;
 }
 
 .beer-category {
@@ -37,6 +39,8 @@ li {
     grid-row-start: 1;
     grid-row-end: 1;
     margin: auto auto;
+    font: 40px/1 var(--catamaran);
+    font-weight: bolder;
 }
 
 .single-review-item-style {
@@ -44,6 +48,8 @@ li {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
+    font: 20px/1 var(--roboto);
+    font-weight: lighter;
 }
 
 .single-review-image-container {
@@ -57,12 +63,16 @@ li {
     grid-column-end: 1;
     grid-row-start: 3;
     grid-row-end: 3; 
+    font: 20px/1 var(--roboto);
+    font-weight: lighter;
 }
 
 .single-review-item-text {
     grid-column: 2 / span 2;
     grid-row:    3 / span 1;
     font: 20px/1 var(--roboto);
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .wrapper {
