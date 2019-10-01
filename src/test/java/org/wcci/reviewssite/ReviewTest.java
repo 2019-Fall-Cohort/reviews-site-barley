@@ -20,7 +20,7 @@ public void canGetBeerName(){
 	assertEquals (expectedName, "beer");
 	assertEquals (expectedStyle, "lager");
 	assertEquals (expectedUrl, "https://tinyurl.com/y6ndeolw");
-	assertEquals (expectedRating, 4);
+	assertEquals (expectedRating, 4, .001); //last parameter is delta
 	assertEquals (expectedId, "12345");
 	assertEquals (expectedDescription, "good");
 	
