@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+}
 
 .beer-category {
     display: flex;
@@ -17,6 +22,47 @@ H1 {
 
 li {   
     list-style: none;
+}
+
+.single-review-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    margin: 0 auto;
+}
+
+.single-review-item-name {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: auto auto;
+}
+
+.single-review-item-style {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.single-review-image-container {
+    grid-column: 2 / span 2;
+    grid-row:    1 / span 2;
+    margin: auto;
+}
+
+.single-review-item-rating {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3; 
+}
+
+.single-review-item-text {
+    grid-column: 2 / span 2;
+    grid-row:    3 / span 1;
+    font: 20px/1 var(--roboto);
 }
 
 .wrapper {
