@@ -2,6 +2,7 @@ package org.wcci.reviewssite;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -34,4 +35,14 @@ public class ReviewRepoTest {
 		assertThat(underTest.retrieveAllReviews(), containsInAnyOrder(testReview, testReview2, testReview3, testReview4));
 	}
 
+	@Test
+	public void canRetrieveSingleReviewObjectByID() {
+		ReviewRepo underTest= new ReviewRepo();
+		Review testReview1 = new Review("Cheetah",   "Lager",  "url", 5, "1", "Yum yum");
+		Review testReview2 = new Review("Bud Light", "Pee pee","url", 4, "2", "barf");
+		underTest.addReview(testReview1);
+		underTest.addReview(testReview2);
+		Review expectedReview = underTest.retrieveReviewByID(testReview2.getReviewId());
+		assertEquals(expectedReview, testReview2);
+	}
 }

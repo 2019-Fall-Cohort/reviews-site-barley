@@ -11,19 +11,20 @@ public class ReviewRepo {
 		return reviews;
 	}
 
-
 	public ReviewRepo() {
 		reviews = new HashMap<>();
 	}
 
-
 	public void addReview(Review testReview) {
 		reviews.put(testReview.getReviewId(), testReview);
-
 	}
 
 	public Collection<Review> retrieveAllReviews() {
 		return reviews.values();
+	}
+
+	public Review retrieveReviewByID(String reviewId) { 
+		return reviews.get(reviewId);
 	}
 
 }
