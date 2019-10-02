@@ -3,7 +3,7 @@
 ## Module 3 Group Project
 ---
 ### Goals
-Build a dynamic web application with a MVC architecture.
+Build a dynamic web application with a MVC architecture. 
 - Use TDD to create a suite of unit tests and integration tests.
 - Keep your code clean.
   - Use a linter to maintain code style and formatting standards.
