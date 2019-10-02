@@ -36,7 +36,8 @@ li {
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 400px 400px 400px;
     margin: 0 auto;
-    background-image: url("images/leather.jpg")
+    background-image: url("images/leather.jpg");
+    border: 5px var(--lightyellow);
 }
 
 .single-review-item-name {
