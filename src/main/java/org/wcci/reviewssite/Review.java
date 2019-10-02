@@ -45,6 +45,9 @@ public class Review {
 		return userDescription;
 	}
 	
-	
+	@Override 
+	public String toString() {
+		return beerName;
+	}
 
 }
