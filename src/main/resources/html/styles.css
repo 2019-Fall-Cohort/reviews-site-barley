@@ -4,6 +4,11 @@
 :root {
     --roboto: 'Roboto', sans-serif;
     --catamaran: 'Catamaran', sans-serif;
+    --navy: rgb(40,45,82);
+    --darkgreen: rgb(39,73,39);
+    --leatherbrown: rgb(142,61,7);
+    --lightyellow: rgb(230,221,129);
+    --skyblue: rgb(237,247,255);
 }
 
 .beer-category {
