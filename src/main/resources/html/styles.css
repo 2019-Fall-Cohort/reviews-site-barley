@@ -64,8 +64,9 @@ li {
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 400px 400px 400px;
     margin: 0 auto;
-    background-image: url("images/leather.jpg");
+    background-image: url("images/wood.jpg");
     border: 5px var(--lightyellow);
+
 }
 
 .single-review-item-name {
@@ -91,6 +92,7 @@ li {
     grid-column: 2 / span 2;
     grid-row:    1 / span 2;
     margin: auto;
+    background: black;
     
 }
 
