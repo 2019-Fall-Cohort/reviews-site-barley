@@ -7,17 +7,19 @@ public class Beer {
 	
 	private String beerName;
 	private String style;
+	private String brewery;
 	private String imageUrl;
 	private double userRating;
 	private String reviewId;
 	private String userDescription;
 	
-	public Beer(String beerName, String style, String imageUrl, 
+	public Beer(String beerName, String style, String imageUrl, String brewery, 
 			double userRating, String reviewId, String userDescription) {
 		
 		this.beerName   = beerName;
 		this.style      = style;
 		this.imageUrl   = imageUrl;
+		this.brewery	= brewery;
 		this.userRating = userRating;
 		this.reviewId   = reviewId;
 		this.userDescription = userDescription;
@@ -32,6 +34,10 @@ public class Beer {
 		return style;
 	}
 
+	public String getBrewery() {
+		return brewery;
+	}
+	
 	public String getImageUrl() {
 		return imageUrl;
 	}

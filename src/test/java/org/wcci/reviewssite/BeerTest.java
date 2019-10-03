@@ -10,7 +10,7 @@ public class BeerTest {
 @Test
 public void canGetBeerName(){
 	Beer underTest = new Beer("beer", "lager", "https://tinyurl.com/y6ndeolw", 
-			4, "12345", "good");
+							  "dog's ridge", 4, "12345", "good");
 	String expectedName = underTest.getBeerName();
 	String expectedStyle = underTest.getBeerStyle();
 	String expectedUrl = underTest.getImageUrl();
