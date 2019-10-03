@@ -1,22 +1,25 @@
 package org.wcci.reviewssite;
 
-public class Review {
+//	This class should be renamed to something like 'beer' or 'single beer'
+//  Then consider refactoring the fields in light of said renaming.
+
+public class Beer {
 	
 	private String beerName;
-	private String beerStyle;
+	private String style;
 	private String imageUrl;
 	private double userRating;
 	private String reviewId;
 	private String userDescription;
 	
-	public Review(String beerName, String beerStyle, String imageUrl, 
+	public Beer(String beerName, String style, String imageUrl, 
 			double userRating, String reviewId, String userDescription) {
 		
-		this.beerName = beerName;
-		this.beerStyle = beerStyle;
-		this.imageUrl = imageUrl;
+		this.beerName   = beerName;
+		this.style      = style;
+		this.imageUrl   = imageUrl;
 		this.userRating = userRating;
-		this.reviewId = reviewId;
+		this.reviewId   = reviewId;
 		this.userDescription = userDescription;
 		
 	}
@@ -26,7 +29,7 @@ public class Review {
 	}
 
 	public String getBeerStyle() {
-		return beerStyle;
+		return style;
 	}
 
 	public String getImageUrl() {

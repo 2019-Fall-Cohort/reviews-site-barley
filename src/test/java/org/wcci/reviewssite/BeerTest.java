@@ -5,11 +5,11 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-public class ReviewTest {
+public class BeerTest {
 	
 @Test
 public void canGetBeerName(){
-	Review underTest = new Review("beer", "lager", "https://tinyurl.com/y6ndeolw", 
+	Beer underTest = new Beer("beer", "lager", "https://tinyurl.com/y6ndeolw", 
 			4, "12345", "good");
 	String expectedName = underTest.getBeerName();
 	String expectedStyle = underTest.getBeerStyle();
