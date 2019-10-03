@@ -4,7 +4,7 @@
 :root {
     --roboto: 'Roboto', sans-serif;
     --catamaran: 'Catamaran', sans-serif;
-    --navy: rgb(40,45,82);
+    --navy: rgb(7, 14, 56);
     --darkgreen: rgb(39,73,39);
     --leatherbrown: rgb(142,61,7);
     --lightyellow: rgb(230,221,129);
@@ -42,6 +42,11 @@ H1 {
     
 }
 
+.header-text {
+    /* font: var(--roboto);
+    font color: var(--lightyellow); */
+}
+
 li {   
     list-style: none;
 }
@@ -64,8 +69,9 @@ li {
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 400px 400px 400px;
     margin: 0 auto;
-    background-image: url("images/leather.jpg");
+    background-image: url("images/wood.jpg");
     border: 5px var(--lightyellow);
+
 }
 
 .single-review-item-name {
@@ -91,6 +97,7 @@ li {
     grid-column: 2 / span 2;
     grid-row:    1 / span 2;
     margin: auto;
+    background: black;
     
 }
 
