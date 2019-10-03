@@ -4,7 +4,7 @@
 :root {
     --roboto: 'Roboto', sans-serif;
     --catamaran: 'Catamaran', sans-serif;
-    --navy: rgb(40,45,82);
+    --navy: rgb(7, 14, 56);
     --darkgreen: rgb(39,73,39);
     --leatherbrown: rgb(142,61,7);
     --lightyellow: rgb(230,221,129);
@@ -40,6 +40,11 @@ H1 {
     justify-content: space-around;
     align-items: center;
     
+}
+
+.header-text {
+    /* font: var(--roboto);
+    font color: var(--lightyellow); */
 }
 
 li {   
