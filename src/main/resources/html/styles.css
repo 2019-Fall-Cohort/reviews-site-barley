@@ -15,6 +15,10 @@
     display: flex;
     flex-direction: column;
 }
+.beer-image {
+    display: flex;
+    flex-direction: row;
+}
 
 footer {
     display: flex;
@@ -126,6 +130,5 @@ li {
 .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
 }
