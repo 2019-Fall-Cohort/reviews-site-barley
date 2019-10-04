@@ -1,0 +1,20 @@
+
+:root {
+
+}
+
+body{
+    background-image: url("images/wood2.jpg");
+}
+
+.review {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--lightyellow);
+    background-color: var(--lightyellow);
+    background-color: hsla(0, 0%, 0%, 0.5)
+}
+
+.review-container{
+    
+}
