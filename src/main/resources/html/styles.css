@@ -139,6 +139,29 @@ p {
     height: 185px;
 }
 
+.Wolfs-Ridge-List {
+    display: flex;
+    justify-content: center;
+}
+
+.Wolf-Beer-List {
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 300px 300px 300px; 
+    margin: 2rem auto;
+    border-width: 2px;
+}
+
+.Wolf-Beer-1,
+.Wolf-Beer-2,
+.Wolf-Beer-3,
+.Wolf-Beer-4,
+.Wolf-Beer-5 {
+    border-style: solid;
+
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
