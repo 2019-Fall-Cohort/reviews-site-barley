@@ -139,6 +139,24 @@ p {
     height: 185px;
 }
 
+<<<<<<< HEAD
+.review {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--lightyellow);
+}
+
+.review-container{
+    display
+    background-image: url("images/wood.jpg");
+
+
+}
+
+.review-page-background {
+
+}
+=======
 .Wolfs-Ridge-List {
     display: flex;
     justify-content: center;
@@ -162,6 +180,7 @@ p {
 
 }
 
+>>>>>>> 7d2a63cefaeb0a2b04503a1da2d4957cdd649875
 .wrapper {
     display: flex;
     flex-direction: row;
