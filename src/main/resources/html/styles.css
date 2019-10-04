@@ -40,6 +40,13 @@ h2 {
     font-size: 20px;
 }
 
+header {
+
+    background-image: url("images/wood.jpg");
+
+    
+}
+
 .header-fixed-container{
     width: 100%;
     position: fixed;
@@ -139,40 +146,10 @@ p {
     height: 185px;
 }
 
-.review {
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--lightyellow);
-}
 
-.review-container{
-    background-image: url("images/wood.jpg");
-}
 
 .review-page-background {
 
-}
-.Wolfs-Ridge-List {
-    display: flex;
-    justify-content: center;
-}
-
-.Wolf-Beer-List {
-    display: grid;
-    grid-gap: 15px 20px;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 300px 300px 300px; 
-    margin: 2rem auto;
-    border-width: 2px;
-}
-
-.Wolf-Beer-1,
-.Wolf-Beer-2,
-.Wolf-Beer-3,
-.Wolf-Beer-4,
-.Wolf-Beer-5 {
-    border-style: solid;
-    text-align: center;
 }
 .wrapper {
     display: flex;
