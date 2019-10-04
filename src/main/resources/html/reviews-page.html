@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reviews-page-styling.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Reviews</title>
 </head>
@@ -20,16 +21,19 @@
     </header>
     <!-- This will need to be Thymeleafed such that this next line is  -->
     <h2>Sample Beer Review</h2>
-    
-    <article>
-        <p>Stars:</p>
-            <!-- These class names are lame but are tied to the library used to produce the star effect. -->
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-        <p>This is a beer, I found it in here. And here I am, drinking with King Leer.</p>
-    </article>
+    <div class = "review-container">
+        <article class = "review">
+            <p>Stars:</p>
+                <div class = "star-generator">
+                    <!-- These class names are lame but are tied to the library used to produce the star effect. -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            <p>This is a beer, I found it in here. And here I am, drinking with King Leer.</p>
+        </article>
+    </div>
 </body>
 </html>

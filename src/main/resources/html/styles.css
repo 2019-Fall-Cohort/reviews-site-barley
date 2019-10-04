@@ -139,6 +139,22 @@ p {
     height: 185px;
 }
 
+.review {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--lightyellow);
+}
+
+.review-container{
+    display
+    background-image: url("images/wood.jpg");
+
+
+}
+
+.review-page-background {
+
+}
 .wrapper {
     display: flex;
     flex-direction: row;
