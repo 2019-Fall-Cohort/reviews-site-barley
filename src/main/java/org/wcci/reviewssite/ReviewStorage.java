@@ -8,10 +8,10 @@ import java.util.HashMap;
 public class ReviewStorage {
 
 	
-	private HashMap<String, Beer> reviews;
+	private HashMap<Long, Beer> reviews;
 
 	
-	public HashMap<String, Beer> getReviews() {
+	public HashMap<Long, Beer> getReviews() {
 		return reviews;
 	}
 
@@ -27,7 +27,7 @@ public class ReviewStorage {
 		return reviews.values();
 	}
 
-	public Beer retrieveReviewByID(String reviewId) { 
+	public Beer retrieveReviewByID(Long reviewId) { 
 		return reviews.get(reviewId);
 	}
 

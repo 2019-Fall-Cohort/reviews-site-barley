@@ -10,11 +10,11 @@ public class Beer {
 	private String brewery;
 	private String imageUrl;
 	private double userRating;
-	private String reviewId;
+	private Long reviewId;
 	private String userDescription;
 	
 	public Beer(String beerName, String style, String imageUrl, String brewery, 
-			double userRating, String reviewId, String userDescription) {
+			double userRating, Long reviewId, String userDescription) {
 		
 		this.beerName   = beerName;
 		this.style      = style;
@@ -46,7 +46,7 @@ public class Beer {
 		return userRating;
 	}
 
-	public String getReviewId() {
+	public Long getReviewId() {
 		return reviewId;
 	}
 
