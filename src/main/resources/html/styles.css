@@ -145,12 +145,53 @@ p {
     width: 100%;
     height: 185px;
 }
+<<<<<<< HEAD
 
+=======
+.review {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--lightyellow);
+}
+>>>>>>> d06ff802713ac78f942b4e5fe3d31c278c212eba
 
 
 .review-page-background {
 
 }
+<<<<<<< HEAD
+=======
+
+.Wolfs-Ridge-List {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    
+}
+
+.Wolf-Beer-List {
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 300px 300px 300px; 
+    margin: 2rem auto;
+    border-width: 2px;
+    background-image: url("https://www.columbusunderground.com/wp-content/uploads/2015/11/wolfs-ridge.jpg");
+    
+}
+
+.Wolf-Beer-1,
+.Wolf-Beer-2,
+.Wolf-Beer-3,
+.Wolf-Beer-4,
+.Wolf-Beer-5 {
+    border-style: solid;
+    text-align: center;
+    background-color: lightgray;
+    opacity: 0.7;
+}
+
+>>>>>>> d06ff802713ac78f942b4e5fe3d31c278c212eba
 .wrapper {
     display: flex;
     flex-direction: row;
