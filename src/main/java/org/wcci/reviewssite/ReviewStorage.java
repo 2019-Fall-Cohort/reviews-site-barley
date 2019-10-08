@@ -4,6 +4,9 @@ package org.wcci.reviewssite;
 
 import java.util.Collection;
 import java.util.HashMap;
+import org.springframework.stereotype.Service;
+
+@Service
 
 public class ReviewStorage {
 

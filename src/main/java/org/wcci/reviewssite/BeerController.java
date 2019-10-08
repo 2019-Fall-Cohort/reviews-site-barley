@@ -14,11 +14,11 @@ public class BeerController {
 	@Resource
 	ReviewStorage beers;
 	
-//	@GetMapping("/")
-//	public String getBeers(Model model) {
+	@GetMapping("/")
+	public String getBeers(Model model) {
 //		model.addAttribute("beers", beers.findAlltheBeers());
-//		return "beers";
-//	}
+		return "beers";
+	}
 	
 
 	

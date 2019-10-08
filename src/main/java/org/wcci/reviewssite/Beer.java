@@ -4,7 +4,7 @@ package org.wcci.reviewssite;
 //  Then consider refactoring the fields in light of said renaming.
 
 public class Beer {
-	
+
 	private String beerName;
 	private String style;
 	private String brewery;
@@ -12,18 +12,18 @@ public class Beer {
 	private double userRating;
 	private Long reviewId;
 	private String userDescription;
-	
-	public Beer(String beerName, String style, String imageUrl, String brewery, 
-			double userRating, Long reviewId, String userDescription) {
-		
-		this.beerName   = beerName;
-		this.style      = style;
-		this.imageUrl   = imageUrl;
-		this.brewery	= brewery;
+
+	public Beer(String beerName, String style, String imageUrl, String brewery, double userRating, Long reviewId,
+			String userDescription) {
+
+		this.beerName = beerName;
+		this.style = style;
+		this.imageUrl = imageUrl;
+		this.brewery = brewery;
 		this.userRating = userRating;
-		this.reviewId   = reviewId;
+		this.reviewId = reviewId;
 		this.userDescription = userDescription;
-		
+
 	}
 
 	public String getBeerName() {
@@ -37,7 +37,7 @@ public class Beer {
 	public String getBrewery() {
 		return brewery;
 	}
-	
+
 	public String getImageUrl() {
 		return imageUrl;
 	}
@@ -53,8 +53,8 @@ public class Beer {
 	public String getUserDescription() {
 		return userDescription;
 	}
-	
-	@Override 
+
+	@Override
 	public String toString() {
 		return beerName;
 	}
