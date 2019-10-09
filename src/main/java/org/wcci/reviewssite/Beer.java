@@ -1,19 +1,27 @@
 package org.wcci.reviewssite;
 
-//	This class should be renamed to something like 'beer' or 'single beer'
-//  Then consider refactoring the fields in light of said renaming.
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+@Entity
 public class Beer {
 
+	@Id
+	@GeneratedValue
 	private String beerName;
 	private String style;
-	private String brewery;
-	private String imageUrl;
-	private double userRating;
 	private Long reviewId;
+	private double userRating;
+	private String imageUrl;
 	private String userDescription;
+	
+	@ManyToOne
+	private BrewingCompany brewery;
 
-	public Beer(String beerName, String style, String imageUrl, String brewery, double userRating, Long reviewId,
+	
+	public Beer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, Long reviewId,
 			String userDescription) {
 
 		this.beerName = beerName;
@@ -34,7 +42,7 @@ public class Beer {
 		return style;
 	}
 
-	public String getBrewery() {
+	public BrewingCompany getBrewery() {
 		return brewery;
 	}
 
