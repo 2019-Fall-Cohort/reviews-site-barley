@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +10,36 @@
 </head>
 
 <body>
-    <div class="header-fixed-container">
-        <header class="main-header">
-            <h1>Barleys Reviews</h1>
-            <ul class="header-list">
-                <!-- <div class = "list-box"> -->
-                <h2 class="header-text">Style</h2>
-                <!-- </div> -->
-                <!-- <div class = "list-box"> -->
-                <h2 class="header-text">Category</h2>
-                <!-- </div> -->
-                <!-- <div class = "list-box"> -->
-                <h2 class="header-text">General</h2>
-                <!-- </div> -->
-                <!-- <div class = "list-box"> -->
-                <h2 class="header-text">Brewing Co</h2>
-                <!-- </div> -->
-            </ul>
+    <div class = "header-fixed-container">
+        <header class = "main-header">
+                <h1>Columbus Barley's Reviews</h1>
+                <ul class = "header-list">
+                    <!-- <div class = "list-box"> -->
+                        <h2 class = "header-text">Style</h2>
+                    <!-- </div> -->
+                    <!-- <div class = "list-box"> -->
+                        <h2 class = "header-text">Category</h2>
+                    <!-- </div> -->
+                    <!-- <div class = "list-box"> -->
+                        <h2 class = "header-text">General</h2>
+                    <!-- </div> -->
+                    <!-- <div class = "list-box"> -->
+                        <h2 class = "header-text">Brewing Co</h2>
+                    <!-- </div> -->
+                </ul>
         </header>
-    </div>
-    <div class="spacer"></div>
-    <div class="single-review-container"><img src="/images.wood.jpg">
-        <h2 class="single-review-item-name" th:text="${beer.beerName}">Ironic Hipster Name</h2>
-        <p class="single-review-item-brewery" th:text="${beer.style}">Extra-super hyper-hoppier-than-hoppy
-            <div class="brewery" th:text="${beer.brewery}">Wolf's Ridge</div>
-        </p>
+    </div> 
+    <div class = "spacer"></div>   
+    
+    <div class="single-review-container"><img src = "/images.wood.jpg">
+
+        <h2  th:text = "${beer.beerName}" class="single-review-item-name">Ironic Hipster Name</h2>
+        <p th:text = "${beer.style}"  class="single-review-item-style">Extra-super hyper-hoppier-than-hoppy</p>
         <div class="single-review-image-container">
-            <img class="single-review-item-pic" th:src="@{beer.imageUrl}">
+          <img  class="single-review-item-pic"src="https://tinyurl.com/y5z6jnka">
         </div>
-        <p class="single-review-item-rating">Rating: <span th:text="${beer.userRating}">5</span> out of 5</p>
-        <article class="single-review-item-text" th:text="${beer.reviews}">It was potable. A trippy journey through the wild world of hops in
-            socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab
-            bouleh. It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and
-            corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh.</article>
+        <p th:text = "${beer.userRating}" class="single-review-item-rating">Rating: 5 out of 100</p>
+        <article th:text = "${beer.userDescription}" class="single-review-item-text">It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh. It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh.</article>
     </div>
 </body>
-
 </html>
