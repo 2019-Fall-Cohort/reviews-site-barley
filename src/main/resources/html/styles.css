@@ -107,7 +107,7 @@ p {
     font-weight: bolder;
 }
 
-.single-review-item-style {
+.single-review-item-brewery {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
