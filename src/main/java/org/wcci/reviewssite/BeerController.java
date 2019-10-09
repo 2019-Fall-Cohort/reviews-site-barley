@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class BeerController {
 	@Resource
-	ReviewStorage beers;
+	BrewingCompany beers;
 	
 	@GetMapping("/")
 	public String getBeers(Model model) {

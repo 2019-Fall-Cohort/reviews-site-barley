@@ -16,6 +16,7 @@ public class BrewingCompany {
 	@GeneratedValue
 	private Long id;
 	private String name;
+	private String backgroundURL;
 	
 	@OneToMany(mappedBy = "brewery")
 	private List<Beer> beers;
@@ -39,6 +40,9 @@ public class BrewingCompany {
 	@Override
 	public String toString(){
 		return name;
+	}
+	public String getBackgroundURL() {
+		return backgroundURL;
 	}
 	
 }

@@ -1,9 +1,12 @@
 package org.wcci.reviewssite;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Beer {
@@ -16,6 +19,8 @@ public class Beer {
 	private double userRating;
 	private String imageUrl;
 	private String userDescription;
+	@OneToMany (mappedBy = "beer") 
+	private List <Review> reviews;
 	
 	@ManyToOne
 	private BrewingCompany brewery;
