@@ -10,15 +10,15 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Beer {
-
 	@Id
 	@GeneratedValue
+	private Long reviewId;
 	private String beerName;
 	private String style;
-	private Long reviewId;
 	private double userRating;
 	private String imageUrl;
 	private String userDescription;
+	
 	@OneToMany (mappedBy = "beer") 
 	private List <Review> reviews;
 	
@@ -38,7 +38,8 @@ public class Beer {
 		this.userDescription = userDescription;
 
 	}
-
+	public Beer() {}
+	
 	public String getBeerName() {
 		return beerName;
 	}

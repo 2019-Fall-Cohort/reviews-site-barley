@@ -21,6 +21,8 @@ public class BrewingCompany {
 	@OneToMany(mappedBy = "brewery")
 	private List<Beer> beers;
 	
+	public BrewingCompany() {}
+	
 	public BrewingCompany(String name) {
 		this.name = name;
 	

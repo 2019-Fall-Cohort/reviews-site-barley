@@ -3,13 +3,15 @@ package org.wcci.reviewssite;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Review {
 	@Id
 	@GeneratedValue
-	private String reviewText;
 	private Long reviewId;
+	private String reviewText;
+	@ManyToOne
 	private Beer beer;
 	
 	public Review(String reviewText, Long reviewID, Beer beer) {
