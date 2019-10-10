@@ -32,7 +32,7 @@ public class BeerController {
 	public String addBeer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, Long reviewId,
 			String userDescription) {
 			beers.add(new Beer(beerName, style, imageUrl, brewery, userRating, reviewId, userDescription));
-			return "redirect:/books";
+			return "redirect:/beers";
 	}
 
 

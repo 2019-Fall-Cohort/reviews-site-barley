@@ -1,5 +1,9 @@
 package org.wcci.reviewssite;
 
+//
+//¡Atención!  This class is analagous to the other two ...Storage.java classes.
+//
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
