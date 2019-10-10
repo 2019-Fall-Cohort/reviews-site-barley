@@ -12,7 +12,7 @@
 <body>
     <div class = "header-fixed-container">
         <header class = "main-header">
-                <h1>Barleys Reviews</h1>
+                <h1>Columbus Barley's Reviews</h1>
                 <ul class = "header-list">
                     <!-- <div class = "list-box"> -->
                         <h2 class = "header-text">Style</h2>
@@ -30,14 +30,16 @@
         </header>
     </div> 
     <div class = "spacer"></div>   
+    
     <div class="single-review-container"><img src = "/images.wood.jpg">
-        <h2  class="single-review-item-name">Ironic Hipster Name</h2>
-        <p   class="single-review-item-style">Extra-super hyper-hoppier-than-hoppy</p>
+
+        <h2  th:text = "${beer.beerName}" class="single-review-item-name">Ironic Hipster Name</h2>
+        <p th:text = "${beer.style}"  class="single-review-item-style">Extra-super hyper-hoppier-than-hoppy</p>
         <div class="single-review-image-container">
           <img  class="single-review-item-pic"src="https://tinyurl.com/y5z6jnka">
         </div>
-        <p class="single-review-item-rating">Rating: 5 out of 100</p>
-        <article class="single-review-item-text">It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh. It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh.</article>
+        <p th:text = "${beer.userRating}" class="single-review-item-rating">Rating: 5 out of 100</p>
+        <article th:text = "${beer.userDescription}" class="single-review-item-text">It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh. It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh.</article>
     </div>
 </body>
 </html>
