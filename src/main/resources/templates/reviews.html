@@ -13,25 +13,34 @@
 </head>
 
 <body>
+
+    <div th:each="review : ${beer.reviews}"></div>
+      <h2 th:text="${beer.beerName}"></h2>
+      <ul>
+        <li th:each="review : ${beer.reviews}" th:text="${review.id}"></li>
+      </ul>
+    
+
+<!-- 
     <div class="header-fixed-container">
         <header class="main-header">
             <h1>Barleys Reviews</h1>
             <ul class="header-list">
-                <!-- <div class = "list-box"> -->
+                <div class = "list-box">
                 <h2 class="header-text">Style</h2>
-                <!-- </div> -->
+                 </div> -->
                 <!-- <div class = "list-box"> -->
-                <h2 class="header-text">Category</h2>
-                <!-- </div> -->
-                <!-- <div class = "list-box"> -->
+                <!-- <h2 class="header-text">Category</h2>
+                 </div> -->
+                <!-- <div class = "list-box"> 
                 <h2 class="header-text">General</h2>
-                <!-- </div> -->
+                </div> -->
                 <!-- <div class = "list-box"> -->
-                <h2 class="header-text">Brewing Co</h2>
-                <!-- </div> -->
+                <!-- <h2 class="header-text">Brewing Co</h2>
+                 </div> 
             </ul>
-        </header>
-    </div>
+        </header> --> 
+    <!-- </div>
     <div class="spacer"></div>
     <div class="single-review-container"><img src="/images.wood.jpg">
         <h2 class="single-review-item-name" th:text="${beer.beerName}">Ironic Hipster Name</h2>
@@ -47,7 +56,7 @@
             socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab
             bouleh. It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and
             corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh.</article>
-    </div>
+    </div> --> 
 </body>
 
 </html>
