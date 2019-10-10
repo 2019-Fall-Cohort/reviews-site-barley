@@ -14,6 +14,8 @@ public class Review {
 	@ManyToOne
 	private Beer beer;
 	
+	public Review() {}
+	
 	public Review(String reviewText, Long reviewID, Beer beer) {
 
 		this.reviewText = reviewText;
