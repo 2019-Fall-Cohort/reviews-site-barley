@@ -26,7 +26,7 @@ public class BrewingCompanyController {
 	@RequestMapping("/{id}")
 	public String getCompany(@PathVariable ("id") long id, Model model) {
 		model.addAttribute("company", companies.findBrewingCompany(id));
-		return "companies";
+		return "company";
 	}
 	
 }
