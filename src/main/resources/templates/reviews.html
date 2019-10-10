@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/reviews-page-styling.css">
+
 
 </head>
 
@@ -40,7 +42,8 @@
             <img class="single-review-item-pic" th:src="@{beer.imageUrl}">
         </div>
         <p class="single-review-item-rating">Rating: <span th:text="${beer.userRating}">5</span> out of 5</p>
-        <article class="single-review-item-text" th:text="${beer.reviews}">It was potable. A trippy journey through the wild world of hops in
+        <article class="single-review-item-text" th:text="${beer.reviews}">It was potable. A trippy journey through the
+            wild world of hops in
             socks, and hops on pops and corn pops and whatever else comes to mind after a lunch of pretzels and tab
             bouleh. It was potable. A trippy journey through the wild world of hops in socks, and hops on pops and
             corn pops and whatever else comes to mind after a lunch of pretzels and tab bouleh.</article>
