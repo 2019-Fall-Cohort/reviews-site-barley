@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 public class Beer {
 	@Id
 	@GeneratedValue
-	private Long reviewId;
+	private Long id;
 	private String beerName;
 	private String style;
 	private double userRating;
@@ -34,7 +34,7 @@ public class Beer {
 		this.imageUrl = imageUrl;
 		this.brewery = brewery;
 		this.userRating = userRating;
-		this.reviewId = reviewId;
+		this.id = reviewId;
 		this.userDescription = userDescription;
 
 	}
@@ -60,8 +60,8 @@ public class Beer {
 		return userRating;
 	}
 
-	public Long getReviewId() {
-		return reviewId;
+	public Long getId() {
+		return id;
 	}
 
 	public String getUserDescription() {
