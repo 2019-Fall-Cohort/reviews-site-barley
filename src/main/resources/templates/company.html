@@ -20,7 +20,7 @@
     <h2 th:text="${company.name}"></h2>
     <ul class="Beer-List">
         <li th:each="beer: ${company.beers}" th:text="${beer.beerName}"></li>
-        <a th:text="${beer.beerName}" th:href="|/reviews/${review.id}|">Review Page</a>
+        <!-- <a th:text="${beer.beerName}" th:href="|/reviews/${review.reviewId}|">Review Page</a> -->
     </ul>
 
 </body>
