@@ -8,8 +8,6 @@ import org.springframework.stereotype.Component;
 public class BreweryBeerAndReviewPopulator implements CommandLineRunner{
 
 	@Autowired
-	private ReviewRepository reviewRepo;
-	@Autowired
 	private BeerRepository beerRepo;
 	@Autowired
 	private BrewingCompanyRepository brewingRepo;
@@ -37,12 +35,26 @@ public class BreweryBeerAndReviewPopulator implements CommandLineRunner{
     							4, 3L, "good");
     	Beer beer2 = new Beer ("Five","Pale Ale", "https://tinyurl.com/y6ndeolw", brewery1, 
     							4, 4L, "good");
+    	Beer beer3 = new Beer ("CultRider","Black Double IPA", "https://tinyurl.com/y6ndeolw", brewery2, 
+								4, 5L, "good");
+    	Beer beer4 = new Beer ("Scientist","IPA", "https://tinyurl.com/y6ndeolw", brewery3, 
+								4, 6L, "good");
+    	Beer beer5 = new Beer ("Columbus IPA","IPA", "https://tinyurl.com/y6ndeolw", brewery4, 
+								4, 7L, "good");
+    	Beer beer6 = new Beer ("Uptown","Pilsner", "https://tinyurl.com/y6ndeolw", brewery5, 
+								4, 8L, "good");
+    	Beer beer7 = new Beer ("Urban Sombrero","Mexican Lager", "https://tinyurl.com/y6ndeolw", brewery6, 
+								4, 9L, "good");
+    	Beer beer8 = new Beer ("Speed Merchant","White IPA", "https://tinyurl.com/y6ndeolw", brewery7, 
+								4, 10L, "good");
     	beerRepo.save(beer1);
     	beerRepo.save(beer2);
+    	beerRepo.save(beer3);
+    	beerRepo.save(beer4);
+    	beerRepo.save(beer5);
+    	beerRepo.save(beer6);
+    	beerRepo.save(beer7);
+    	beerRepo.save(beer8);
     	
-    	Review review1 = new Review("Eminently drinkable.", 1L,	beer1);
-    	Review review2 = new Review("Positively potable, I presume.", 2L,	beer2);
-    	reviewRepo.save(review1);
-    	reviewRepo.save(review2);
     }     
 }
