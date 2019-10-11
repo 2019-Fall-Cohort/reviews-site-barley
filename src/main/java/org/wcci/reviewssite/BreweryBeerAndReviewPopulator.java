@@ -32,9 +32,9 @@ public class BreweryBeerAndReviewPopulator implements CommandLineRunner{
     	brewingRepo.save(brewery7);
     	
     	Beer beer1 = new Beer ("Buchenrauch","Smoked Exotic", "https://tinyurl.com/y6ndeolw", brewery, 
-    							4, 3L, "good");
+    							4, 1L, "good");
     	Beer beer2 = new Beer ("Five","Pale Ale", "https://tinyurl.com/y6ndeolw", brewery1, 
-    							4, 4L, "good");
+    							4, 2L, "good");
     	Beer beer3 = new Beer ("CultRider","Black Double IPA", "https://tinyurl.com/y6ndeolw", brewery2, 
 								4, 5L, "good");
     	Beer beer4 = new Beer ("Scientist","IPA", "https://tinyurl.com/y6ndeolw", brewery3, 
