@@ -18,8 +18,20 @@ public class BreweryBeerAndReviewPopulator implements CommandLineRunner{
     	
     	BrewingCompany brewery = new BrewingCompany("Wolf's Ridge");
     	BrewingCompany brewery1 = new BrewingCompany("North High Brewing");
+    	BrewingCompany brewery2 = new BrewingCompany("Hoof Hearted");
+    	BrewingCompany brewery3 = new BrewingCompany("Seventh Son");
+    	BrewingCompany brewery4 = new BrewingCompany("Columbus");
+    	BrewingCompany brewery5 = new BrewingCompany("Elevator");
+    	BrewingCompany brewery6 = new BrewingCompany("Land-Grant");
+    	BrewingCompany brewery7 = new BrewingCompany("Platform");
     	brewingRepo.save(brewery);
     	brewingRepo.save(brewery1);
+    	brewingRepo.save(brewery2);
+    	brewingRepo.save(brewery3);
+    	brewingRepo.save(brewery4);
+    	brewingRepo.save(brewery5);
+    	brewingRepo.save(brewery6);
+    	brewingRepo.save(brewery7);
     	
     	Beer beer1 = new Beer ("Buchenrauch","Smoked Exotic", "https://tinyurl.com/y6ndeolw", brewery, 
     							4, 3L, "good");
