@@ -22,7 +22,7 @@ public class Beer {
 	@OneToMany (mappedBy = "beer") 
 	private List <Review> reviews;
 	
-	@ManyToOne
+	@ManyToOne 
 	private BrewingCompany brewery;
 
 	
