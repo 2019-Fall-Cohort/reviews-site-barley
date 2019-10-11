@@ -15,10 +15,6 @@
     display: flex;
     flex-direction: column;
 }
-.beer-image {
-    display: flex;
-    flex-direction: row;
-}
 
 .checked {
     color: orange;
@@ -87,6 +83,29 @@ li {
 p {
     font-family: var(--roboto);
 }
+
+.picture-and-companies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+    grid-auto-flow: dense;
+}
+
+/* .picture-and-companies-beer-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-and-companies-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: space-evenly;
+} */
 
 .single-review-container {
     display: grid;
