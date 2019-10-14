@@ -19,9 +19,9 @@
         <li th:text="${beer.userDescription}">review</li>
         </ul>
     <main>
-        <form action="/addReview" method="POST">
+        <form action="/reviews/add" method="POST">
             <label>Add a review: <input type="text" name="reviewText"/></label> 
-            <input type="hidden" name="beerId" th:field="${beer.id}" />
+            <input type="hidden" name="beerId" th:value="${beer.id}" />
                 <button>Submit</button>
         </form>
         <ul th:each="review: ${beer.reviews}">

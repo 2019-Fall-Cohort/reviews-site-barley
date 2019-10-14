@@ -16,6 +16,10 @@ public class Review {
 	
 	public Review() {}
 	
+	public String getReviewText() {
+		return reviewText;
+	}
+
 	public Review(String reviewText, Beer beer) {
 
 		this.reviewText = reviewText;

@@ -29,10 +29,11 @@ public class ReviewController {
 		return "reviews";
 	}
 	
-	@PostMapping("/addReview")
+	@PostMapping("/add")
 	public String addReview(String reviewText, Long beerId){
 			Beer beer= beers.findBeer(beerId);
 			reviews.add(new Review(reviewText, beer));
-			return "redirect:/reviews";
+			
+			return "redirect:/beers/" + beerId;
 	}
 }
