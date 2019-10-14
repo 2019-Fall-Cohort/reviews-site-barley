@@ -16,10 +16,10 @@ public class Review {
 	
 	public Review() {}
 	
-	public Review(String reviewText, Long reviewID, Beer beer) {
+	public Review(String reviewText, Beer beer) {
 
 		this.reviewText = reviewText;
-		this.reviewId = reviewID;
+	
 		this.beer = beer;
 
 	}

@@ -26,6 +26,9 @@ public class Beer {
 	private BrewingCompany brewery;
 
 	
+	public List<Review> getReviews() {
+		return reviews;
+	}
 	public Beer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, Long reviewId,
 			String userDescription) {
 
