@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
+body {
+    background-image: url("https://www.columbusnavigator.com/wp-content/uploads/2017/02/Columbus-Skyline.jpg"); 
+    background-size: cover;
+    overflow: hidden;
+}
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --catamaran: 'Catamaran', sans-serif;
+    --navy: rgb(7, 14, 56);
+    --darkgreen: rgb(39,73,39);
+    --leatherbrown: rgb(142,61,7);
+    --lightyellow: rgb(230,221,129);
+    --skyblue: rgb(237,247,255);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: var(--catamaran);
+    font-size: 20px;
+}
+
+li {   
+    list-style: none;
+}
+
+p {
+    font-family: var(--roboto);
+}
+
+.picture-and-companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
