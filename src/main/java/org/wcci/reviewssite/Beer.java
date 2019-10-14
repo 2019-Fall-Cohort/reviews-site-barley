@@ -44,7 +44,7 @@ public class Beer {
 		return beerName;
 	}
 
-	public String getBeerStyle() {
+	public String getStyle() {
 		return style;
 	}
 
