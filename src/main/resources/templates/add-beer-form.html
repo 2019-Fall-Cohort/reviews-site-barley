@@ -26,7 +26,7 @@
                 <span th:text="${beer.userDescription}"></span>
             </li>
         </ul>
-        <form action="company/add" method="POST">
+        <form action="/company/add" method="POST">
             <label>Beer name
                 <input type="text" name="beerName.beer" /></label>
             <label>Beer style
@@ -39,6 +39,8 @@
                 <input type="text" name="userRating.beer" /></label>
             <label>Review
                 <input type="text" name="review" /></label>
+            <input type="hidden" name="beerId" th:value="${beer.id}"/>
+
             <button type="submit">Submit</button>
         </form>
     </main>
