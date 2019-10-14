@@ -28,7 +28,7 @@ public class ReviewController {
 		return "reviews";
 	}
 	
-	@PostMapping("/add")
+	@PostMapping("/addReview")
 	public String addReview(String reviewText, Long reviewID, Beer beer){
 			reviews.add(new Review(reviewText, reviewID, beer));
 			return "redirect:/reviews";
