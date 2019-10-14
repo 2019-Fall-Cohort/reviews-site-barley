@@ -17,5 +17,9 @@
         <li th:text="${beer.userDescription}">review</li>
         </ul>
     <main>
+        <form action="/createreview" method="POST">
+            <label>Add a review: <input type="text" name="Review"/><lable> 
+                <button>Submit</button>
+        <ul th:each="Review: $("
 </body>
 </html>
