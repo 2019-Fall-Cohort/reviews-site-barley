@@ -10,13 +10,19 @@
 
 <body>
     <main>
-        <h2 th:text="beername:${beerName.beer}"></h2>
-        <p th:text="brewingco:${company.name}">Brewing Co.</p>
-        <p th:text="style:${style.beer}">style</p>
-        <p th:text="rating:${user.rating}">5/5</p>
-        <img th:src="{imageUrl.beer}" style="width: 500px; height: 500px;"> </img>
-        <p th:text="review:${userdescription.review}">review</p>
-        <main>
+        <h2 th:text="${beer.beerName}">The given beer name</h2>
+        <ul>
+        <li th:text="${beer.brewery}">Brewing Co.</li>
+        <li th:text="${beer.userRating}">user rating</li>
+        <li th:text="${beer.style}">style</li>
+        <img th:src="${beer.imageUrl}">image</img>
+        <li th:text="${beer.userDescription}">review</li>
+        </ul>
+    <main>
+        <form action="/createreview" method="POST">
+            <label>Add a review: <input type="text" name="Review"/><lable> 
+                <button>Submit</button>
+        <ul th:each="Review: $("
 </body>
 
 </html>
