@@ -31,8 +31,13 @@ public class BeerController {
 	@PostMapping("/add")
 	public String addBeer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, Long reviewId,
 			String userDescription) {
+<<<<<<< HEAD
 			beers.add(new Beer(beerName, style, imageUrl, brewery, userRating, userDescription));
 			return "redirect:/beers";
+=======
+			beers.add(new Beer(beerName, style, imageUrl, brewery, userRating, reviewId, userDescription));
+			return "redirect:/company";
+>>>>>>> luke
 	}
 
 
