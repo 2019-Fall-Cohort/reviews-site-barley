@@ -19,10 +19,14 @@
         <li th:text="${beer.userDescription}">review</li>
         </ul>
     <main>
-        <form action="/createreview" method="POST">
-            <label>Add a review: <input type="text" name="Review"/><lable> 
+        <form action="/addReview" method="POST">
+            <label>Add a review: <input type="text" name="reviewText"/></label> 
+            <input type="hidden" name="beerId" th:field="${beer.id}" />
                 <button>Submit</button>
-        <ul th:each="Review: $("
+        </form>
+        <ul th:each="review: ${beer.reviews}">
+            <li th:text="${review.reviewText}">Description</li>
+        </ul>
 </body>
 
 </html>

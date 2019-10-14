@@ -15,7 +15,8 @@ public class ReviewController {
 
 	@Resource
 	ReviewStorage reviews;
-	
+	@Resource 
+	BeerCave  beers; 
 	@GetMapping("")
 	public String getReviews(Model model) {
 	model.addAttribute("reviews", reviews.findAllTheReviews());
@@ -28,9 +29,10 @@ public class ReviewController {
 		return "reviews";
 	}
 	
-	@PostMapping("/add")
-	public String addReview(String reviewText, Long reviewID, Beer beer){
-			reviews.add(new Review(reviewText, reviewID, beer));
+	@PostMapping("/addReview")
+	public String addReview(String reviewText, Long beerId){
+			Beer beer= beers.findBeer(beerId);
+			reviews.add(new Review(reviewText, beer));
 			return "redirect:/reviews";
 	}
 }
