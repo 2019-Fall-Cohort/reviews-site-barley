@@ -32,21 +32,32 @@ public class BreweryBeerAndReviewPopulator implements CommandLineRunner{
     	brewingRepo.save(brewery7);
     	
     	Beer beer1 = new Beer ("Buchenrauch","Smoked Exotic", "https://tinyurl.com/y6ndeolw", brewery, 
-    							4, 1L, "good");
+    							4, "good");
     	Beer beer2 = new Beer ("Five","Pale Ale", "https://tinyurl.com/y6ndeolw", brewery1, 
-    							4, 2L, "good");
-    	Beer beer3 = new Beer ("CultRider","Black Double IPA", "https://tinyurl.com/y6ndeolw", brewery2, 
-								4, 5L, "good");
+    							4, "good");
     	Beer beer4 = new Beer ("Scientist","IPA", "https://tinyurl.com/y6ndeolw", brewery3, 
-								4, 6L, "good");
+								4, "good");
     	Beer beer5 = new Beer ("Columbus IPA","IPA", "https://tinyurl.com/y6ndeolw", brewery4, 
-								4, 7L, "good");
+								4, "good");
     	Beer beer6 = new Beer ("Uptown","Pilsner", "https://tinyurl.com/y6ndeolw", brewery5, 
-								4, 8L, "good");
+								4, "good");
     	Beer beer7 = new Beer ("Urban Sombrero","Mexican Lager", "https://tinyurl.com/y6ndeolw", brewery6, 
-								4, 9L, "good");
+								4, "good");
     	Beer beer8 = new Beer ("Speed Merchant","White IPA", "https://tinyurl.com/y6ndeolw", brewery7, 
-								4, 10L, "good");
+								4, "good");
+    	
+    	
+    	
+    	Beer beer3 = new Beer ("CultRider","Black Double IPA", "https://tinyurl.com/y6ndeolw", brewery2, 
+    							4, "good");
+    	Beer beer9 = new Beer ("Key Bump","Triple IPA", "https://tinyurl.com/y6ndeolw", brewery2, 
+								2, "good");
+    	Beer beer14 = new Beer ("Konkey Dong","Hairy beer", "https://tinyurl.com/y6ndeolw", brewery2, 
+								1, "a bit hairy");
+    	Beer beer15 = new Beer ("Alex","Incompetent beer", "https://tinyurl.com/y6ndeolw", brewery2, 
+								1, "struggling to understand Spring Boot");
+    	Beer beer16 = new Beer ("Robby","Slick haircut", "https://tinyurl.com/y6ndeolw", brewery2, 
+								1, "Like Konkey Dong, also a bit hairy");
     	beerRepo.save(beer1);
     	beerRepo.save(beer2);
     	beerRepo.save(beer3);
@@ -55,6 +66,9 @@ public class BreweryBeerAndReviewPopulator implements CommandLineRunner{
     	beerRepo.save(beer6);
     	beerRepo.save(beer7);
     	beerRepo.save(beer8);
-    	
+    	beerRepo.save(beer9);
+    	beerRepo.save(beer14);
+    	beerRepo.save(beer15);
+    	beerRepo.save(beer16);
     }     
 }
