@@ -29,7 +29,7 @@ public class Beer {
 	public List<Review> getReviews() {
 		return reviews;
 	}
-	public Beer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, Long reviewId,
+	public Beer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, 
 			String userDescription) {
 
 		this.beerName = beerName;
@@ -37,7 +37,6 @@ public class Beer {
 		this.imageUrl = imageUrl;
 		this.brewery = brewery;
 		this.userRating = userRating;
-		this.id = reviewId;
 		this.userDescription = userDescription;
 
 	}
