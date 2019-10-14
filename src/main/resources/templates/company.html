@@ -11,10 +11,10 @@
 </head>
 
 <body>
+        <h1 class="main-header" th:text="${company.name}"></h1>
     <div th:each="beer: ${company.beers}"></div>  
 
-    <h1 class="main-header" th:text="${company.name}"></h1>
-    <ul class="Beer-List">
+    <ul>
         <li th:each="beer: ${company.beers}"> 
         <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
     </ul>
