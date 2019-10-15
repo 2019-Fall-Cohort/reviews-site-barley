@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Explore The Beers</title>
     <link rel="stylesheet" href="/css/beers-style.css">
 </head>
 
 <body>
     <main>
-        <h2 th:text="${beer.beerName}">The given beer name</h2>
+        <h2 class="name-of-brewery" th:text="${beer.beerName}">The given beer name</h2>
         <ul class = "beer-attributes">
             <li class = "list-item" th:text="${beer.brewery}">Brewing Co.</li>
-            <li class = "list-item" th:text="${beer.userRating}">user rating</li>
+            <li>User review: <span class = "list-item-rating" th:text="${beer.userRating}">user rating</span></li>
+            <!-- <li class = "list-item" th:text="${beer.userRating}">user rating</li> -->
             <li class = "list-item" th:text="${beer.style}">style</li>
             <li class = "list-item" th:text="${beer.userDescription}">review</li>
         </ul>
     <main>
         <form action="/reviews/add" method="POST">
-            <label>Add a review: <input type="text" name="reviewText"/></label> 
+            <label class="add-a-review">Add a review: <input type="text" name="reviewText"/></label> 
             <input type="hidden" name="beerId" th:value="${beer.id}" />
                 <button>Submit</button>
         </form>
