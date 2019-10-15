@@ -1,3 +1,33 @@
-ul {
-    list-style: none;
+body {
+    background-image: url("/images/bartop.png");
+    background-size: cover;
+    overflow: hidden;
+    color: #06ad06;
+}
+
+.beer-attributes {
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+li.list-item {
+    margin: 10px;
+    list-style-image: url('/images/Masskrug.png');
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+li.list-item:hover {
+    margin: 10px;
+    list-style-image: url('/images/Masskrug.png');
+    color: rgb(223, 96, 11);
+    transition: 0.5s;
+}
+
+.name-of-brewery {
+    text-align: center
 }
