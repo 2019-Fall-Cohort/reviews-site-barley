@@ -11,17 +11,48 @@
 </head>
 
 <body>
-        
-        <a th:href="@{/add-beer-form}">Add a new beer</a>
+<<<<<<< HEAD
 
-        <h1 class="main-header" th:text="${company.name}"></h1>
-    <div th:each="beer: ${company.beers}"></div>  
+
+
+    <div class="main-header">
+        <div class="text-box">
+        <h1 th:text="${company.name}"></h1>
+    </div>
+    </div>
+    <div th:each="beer: ${company.beers}"></div>
 
     <ul>
+        <li th:each="beer: ${company.beers}">
+            <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
+=======
+        <div class="main-header">
+            <hi th:text="${company.name}"></h1>
+        </div>
+    <div th:each="beer: ${company.beers}"></div>  
+
+    <ul class = "beer-list">
         <li th:each="beer: ${company.beers}"> 
         <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
+>>>>>>> e4de3aa85bccfb1b7eb8cfdc59edee6ee92ed480
     </ul>
+    <!-- <footer class= "add-a-beer">
+            <form action="/beers/add" method="POST">
+                <label>Beer name
+                    <input type="text" name="beerName.beer"/></label>
+                <label>Beer style
+                    <input type="text" name="style.beer"/></label>
+                <label>Brewery
+                    <input type="text" name="brewery.company"/></label>
+                <label>User Rating
+                    <input type="text" name="userRating.beer"/></label>
+                <label>Review
+                    <input type="text" name="review"/></label>
+                <input type="hidden" name="beerId" th:value="${beer.id}"/>
+    
+                <button type="submit">Submit</button>
+            </form>
 
-</body>
+    </footer> -->
 
 </html>

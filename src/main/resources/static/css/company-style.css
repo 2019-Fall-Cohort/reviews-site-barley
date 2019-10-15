@@ -1,10 +1,48 @@
-/* .beer-list {
-    display: grid;
+<<<<<<< HEAD
+body {
+    background-image: url("/images/bartop.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+.beer-list {
+    display: flex;
+    justify-content: center;
+    grid-gap: 15 px 20 px; 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+=======
+body{
+    /* background-color: red; */
+}
+
+.beer-list {
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 300px 300px 300px; 
+    margin: 2rem auto;
+    border-width: 2px;
+>>>>>>> e4de3aa85bccfb1b7eb8cfdc59edee6ee92ed480
 }
 
 .main-header {
     display: flex;
     justify-content: center;
-} */
+<<<<<<< HEAD
+    width: 100%;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    border-width: 0.10rem; 
+    width: 25%;
+    
+}
+=======
+} 
+>>>>>>> e4de3aa85bccfb1b7eb8cfdc59edee6ee92ed480
