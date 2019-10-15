@@ -1,5 +1,15 @@
-/* .beer-list {
-    display: grid;
+body {
+    background-image: url("/images/bartop.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+.beer-list {
+    display: flex;
+    justify-content: center;
+    grid-gap: 15 px 20 px; 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
@@ -7,4 +17,14 @@
 .main-header {
     display: flex;
     justify-content: center;
-} */
+    width: 100%;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    border-width: 0.10rem; 
+    width: 25%;
+    
+}

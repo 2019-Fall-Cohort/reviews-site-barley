@@ -11,15 +11,19 @@
 </head>
 
 <body>
-        
-        <a th:href="@{/add-beer-form}">Add a new beer</a>
 
-        <h1 class="main-header" th:text="${company.name}"></h1>
-    <div th:each="beer: ${company.beers}"></div>  
+
+
+    <div class="main-header">
+        <div class="text-box">
+        <h1 th:text="${company.name}"></h1>
+    </div>
+    </div>
+    <div th:each="beer: ${company.beers}"></div>
 
     <ul>
-        <li th:each="beer: ${company.beers}"> 
-        <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
+        <li th:each="beer: ${company.beers}">
+            <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
     </ul>
 
 </body>
