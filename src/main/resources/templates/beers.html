@@ -11,13 +11,14 @@
 
 <body>
     <main>
-        <h2 class="name-of-brewery" th:text="${beer.beerName}">The given beer name</h2>
+        <div class="boxed">
+            <h2 class="name-of-brewery" th:text="${beer.beerName}">The given beer name</h2>
+        </div>
         <ul class = "beer-attributes">
-            <li class = "list-item" th:text="${beer.brewery}">Brewing Co.</li>
-            <li>User review: <span class = "list-item-rating" th:text="${beer.userRating}">user rating</span></li>
-            <!-- <li class = "list-item" th:text="${beer.userRating}">user rating</li> -->
-            <li class = "list-item" th:text="${beer.style}">style</li>
-            <li class = "list-item" th:text="${beer.userDescription}">review</li>
+            <li class = "list-item">Brewery: <span class="list-item-brewery" th:text="${beer.brewery}">Brewing Co.</span></li>
+            <li class = "list-item">User review: <span class = "list-item-rating" th:text="${beer.userRating}">user rating</span></li>
+            <li class = "list-item">Style: <span class="list-item-style" th:text="${beer.style}">style</span></li>
+            <li class = "list-item">Description: <span class="list-item-description" th:text="${beer.userDescription}">review</span></li>
         </ul>
     <main>
         <form action="/reviews/add" method="POST">
@@ -25,9 +26,12 @@
             <input type="hidden" name="beerId" th:value="${beer.id}" />
                 <button>Submit</button>
         </form>
-        <ul th:each="review: ${beer.reviews}">
-            <li class = "generated-review" th:text="${review.reviewText}">Description</li>
-        </ul>
+        <p>Here's what everyone's saying about this beer:</p>
+        <div class="grid-of-reviews">
+            <ul th:each="review: ${beer.reviews}">
+                <li class = "generated-review" th:text="${review.reviewText}">Description</li>
+            </ul>
+        </div>
 </body>
 
 </html>
