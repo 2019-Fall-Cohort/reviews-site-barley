@@ -1,3 +1,9 @@
+body {
+    background-image: url("/images/bartop.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
 .beer-attributes {
     list-style-type: none;
     display:flex;
@@ -8,4 +14,14 @@
 li.list-item {
     margin: 10px;
     list-style-image: url('/images/Masskrug.png');
+    font-weight: bold;
+    color: #274927;
+    transition: 0.5s;
+}
+
+li.list-item:hover {
+    margin: 10px;
+    list-style-image: url('/images/Masskrug.png');
+    color: #8E3D07;
+    transition: 0.5s;
 }
