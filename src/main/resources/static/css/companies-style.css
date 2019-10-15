@@ -5,6 +5,7 @@ body {
     background-image: url("https://www.columbusnavigator.com/wp-content/uploads/2017/02/Columbus-Skyline.jpg"); 
     background-size: cover;
     overflow: hidden;
+    font-family: var(--roboto);
 }
 
 .boxed {
@@ -18,15 +19,7 @@ body {
         width: 17rem;
 }
 
-:root {
-    --roboto: 'Roboto', sans-serif;
-    --catamaran: 'Catamaran', sans-serif;
-    --navy: rgb(7, 14, 56);
-    --darkgreen: rgb(39,73,39);
-    --leatherbrown: rgb(142,61,7);
-    --lightyellow: rgb(230,221,129);
-    --skyblue: rgb(237,247,255);
-}
+
 
 footer {
     display: flex;
@@ -68,3 +61,12 @@ p {
 
 }
 
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --catamaran: 'Catamaran', sans-serif;
+    --navy: rgb(7, 14, 56);
+    --darkgreen: rgb(39,73,39);
+    --leatherbrown: rgb(142,61,7);
+    --lightyellow: rgb(230,221,129);
+    --skyblue: rgb(237,247,255);
+}

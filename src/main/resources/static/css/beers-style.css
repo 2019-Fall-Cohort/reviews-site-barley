@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
+
+
 .beer-attributes {
     list-style-type: none;
     display:flex;
@@ -10,6 +15,7 @@ body {
     background-size: cover;
     /* overflow: hidden; */
     color: orange;
+    font-family: var(--roboto);
 }
 
 .boxed {
@@ -77,4 +83,17 @@ li.list-item:hover {
 .name-of-brewery {
     display: flex;
     justify-content: center;
+}
+
+:root {
+    /* --roboto is the body text */
+    --roboto: 'Roboto', sans-serif;
+
+    /* --catamaran is the header text. */
+    --catamaran: 'Catamaran', sans-serif;
+    --navy: rgb(7, 14, 56);
+    --darkgreen: rgb(39,73,39);
+    --leatherbrown: rgb(142,61,7);
+    --lightyellow: rgb(230,221,129);
+    --skyblue: rgb(237,247,255);
 }
