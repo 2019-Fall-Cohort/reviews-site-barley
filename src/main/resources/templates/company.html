@@ -11,10 +11,8 @@
 </head>
 
 <body>
-<<<<<<< HEAD
 
-
-
+    <div class = "wrapper">
     <div class="main-header">
         <div class="text-box">
         <h1 th:text="${company.name}"></h1>
@@ -25,16 +23,6 @@
     <ul>
         <li th:each="beer: ${company.beers}">
             <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
-=======
-        <div class="main-header">
-            <hi th:text="${company.name}"></h1>
-        </div>
-    <div th:each="beer: ${company.beers}"></div>  
-
-    <ul class = "beer-list">
-        <li th:each="beer: ${company.beers}"> 
-        <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
->>>>>>> e4de3aa85bccfb1b7eb8cfdc59edee6ee92ed480
     </ul>
     <!-- <footer class= "add-a-beer">
             <form action="/beers/add" method="POST">
@@ -54,5 +42,6 @@
             </form>
 
     </footer> -->
-
+</div>
+</body>
 </html>
