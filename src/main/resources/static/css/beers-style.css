@@ -5,7 +5,7 @@
     justify-content: space-evenly;
 }
 
-.list-item {
+li.list-item {
     margin: 10px;
+    list-style-image: url('/images/Masskrug.png');
 }
-
