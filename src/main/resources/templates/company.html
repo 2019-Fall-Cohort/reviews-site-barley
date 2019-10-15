@@ -12,7 +12,7 @@
 
 <body>
         
-        <a href="/add-beer-form">Add a new beer</a>
+        <a th:href="@{/add-beer-form}">Add a new beer</a>
 
         <h1 class="main-header" th:text="${company.name}"></h1>
     <div th:each="beer: ${company.beers}"></div>  
