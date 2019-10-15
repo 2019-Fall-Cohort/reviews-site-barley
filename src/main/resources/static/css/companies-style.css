@@ -6,6 +6,18 @@ body {
     background-size: cover;
     overflow: hidden;
 }
+
+.boxed {
+        background-color: black;
+        border: 1px solid gray;
+        border-width: 0.25rem;
+        border-radius: 5%;
+        color: white;
+        margin: auto;
+        opacity: 0.7;
+        width: 17rem;
+}
+
 :root {
     --roboto: 'Roboto', sans-serif;
     --catamaran: 'Catamaran', sans-serif;
@@ -20,6 +32,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin: 7rem 10rem;
+}
+
+.grid-of-companies {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 1rem auto 1rem auto;
 }
 
 h1 {
@@ -44,4 +65,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
+
