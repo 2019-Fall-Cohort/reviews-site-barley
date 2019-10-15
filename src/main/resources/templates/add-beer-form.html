@@ -20,7 +20,6 @@
             <li th:each="beer : ${beers}">
                 <span th:text="${beer.beerName}"></span>
                 <span th:text="${beer.style}"></span>
-                <span th:text="${beer.imageUrl}"></span>
                 <span th:text="${beer.brewery}"></span>
                 <span th:text="${beer.userRating}"></span>
                 <span th:text="${beer.userDescription}"></span>
@@ -31,8 +30,6 @@
                 <input type="text" name="beerName.beer" /></label>
             <label>Beer style
                 <input type="text" name="style.beer" /></label>
-            <label>Beer image
-                <input type="text" name="imageUrl.beer" /></label>
             <label>Brewery
                 <input type="text" name="brewery.company" /></label>
             <label>User Rating
