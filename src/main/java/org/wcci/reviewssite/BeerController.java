@@ -29,9 +29,9 @@ public class BeerController {
 	}
 	
 	@PostMapping("/add")
-	public String addBeer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, Long reviewId,
+	public String addBeer(String beerName, String style, BrewingCompany brewery, double userRating, Long reviewId,
 			String userDescription) {
-			beers.add(new Beer(beerName, style, imageUrl, brewery, userRating, userDescription));
+			beers.add(new Beer(beerName, style, brewery, userRating, userDescription));
 			return "redirect:/company";
 	}
 

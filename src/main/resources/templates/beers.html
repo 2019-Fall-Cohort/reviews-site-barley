@@ -21,6 +21,7 @@
             <li class = "list-item">Description: <span class="list-item-description" th:text="${beer.userDescription}">review</span></li>
         </ul>
     <main>
+        
         <form action="/reviews/add" method="POST">
             <label class="add-a-review">Add a review: <input type="text" name="reviewText"/></label> 
             <input type="hidden" name="beerId" th:value="${beer.id}" />

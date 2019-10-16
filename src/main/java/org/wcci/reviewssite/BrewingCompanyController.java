@@ -17,6 +17,9 @@ public class BrewingCompanyController {
 	@Resource
 	BrewingCompanyStorage companies;
 	
+	@Resource
+	BeerCave beers;
+	
 	@GetMapping("")
 	public String getCompanies(Model model) {
 		model.addAttribute("companies", companies.findAllTheCompanies());
@@ -28,5 +31,14 @@ public class BrewingCompanyController {
 		model.addAttribute("company", companies.findBrewingCompany(id));
 		return "company";
 	}
+	
+	@PostMapping("/add")
+	public String addBeer(String beerName, String style, double userRating, String userDescription, Long companyId) {
+		BrewingCompany company = companies.findBrewingCompany(companyId);
+		beers.add(new Beer(beerName, style, company, userRating, userDescription));
+		
+		return "redirect:/companies/" + companyId;
+	}
+
 	
 }

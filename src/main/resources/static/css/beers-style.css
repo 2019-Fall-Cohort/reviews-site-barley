@@ -68,14 +68,14 @@ button:hover {
 
 li.list-item {
     margin: 10px;
-    list-style-image: url('/images/Masskrug.png');
+    list-style-image: url('/images/Masskrug2.png');
     font-weight: bold;
     transition: 0.5s;
 }
 
 li.list-item:hover {
     margin: 10px;
-    list-style-image: url('/images/Masskrug.png');
+    list-style-image: url('/images/Masskrug2.png');
     color: rgb(223, 96, 11);
     transition: 0.5s;
 }

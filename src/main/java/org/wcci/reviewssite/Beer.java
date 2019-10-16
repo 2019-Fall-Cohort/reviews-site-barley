@@ -16,7 +16,6 @@ public class Beer {
 	private String beerName;
 	private String style;
 	private double userRating;
-	private String imageUrl;
 	private String userDescription;
 	
 	@OneToMany (mappedBy = "beer") 
@@ -29,12 +28,11 @@ public class Beer {
 	public List<Review> getReviews() {
 		return reviews;
 	}
-	public Beer(String beerName, String style, String imageUrl, BrewingCompany brewery, double userRating, 
+	public Beer(String beerName, String style, BrewingCompany brewery, double userRating, 
 			String userDescription) {
 
 		this.beerName = beerName;
 		this.style = style;
-		this.imageUrl = imageUrl;
 		this.brewery = brewery;
 		this.userRating = userRating;
 		this.userDescription = userDescription;
@@ -52,10 +50,6 @@ public class Beer {
 
 	public BrewingCompany getBrewery() {
 		return brewery;
-	}
-
-	public String getImageUrl() {
-		return imageUrl;
 	}
 
 	public double getUserRating() {
