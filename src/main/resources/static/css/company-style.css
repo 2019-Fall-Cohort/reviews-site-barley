@@ -2,27 +2,24 @@ body {
     background-image: url("https://assets.simpleviewinc.com/simpleview/image/fetch/q_100/https://assets.simpleviewinc.com/simpleview/image/upload/crm/columbus/1wolf0_6d1226de-5056-a348-3aefb0e56e4711ea.jpg");
     background-size: cover;
     overflow: hidden;
-
 }
 .beer-list {
-    display: flex;
-    grid-gap: 15 px 20 px; 
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; 
+    margin: 1rem auto;
+    border-width: 2px;
+    color: orange;                          
 }
 
 .footer {
     background-color: black;
 }
 
-/* .beer-list {
-    display: grid;
-    grid-gap: 15px 20px;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 300px 300px 300px; 
-    margin: 2rem auto;
-    border-width: 2px;
-} */
+
+.label-item {
+    color: orange;
+}
 
 .main-header {
     display: flex;
@@ -33,9 +30,12 @@ body {
 .text-box {
     display: flex;
     justify-content: center;
-    border: solid black;
-    background-color: white;
-    opacity: 0.25;
-    border-width: 0.10 rem;
+    background-color: black;
+    border: 1px solid gray;
+    border-width: 0.25rem;
+    border-radius: 5%;
+    color: white;
+    margin: auto;
+    opacity: 0.7;
     width: 25%
 }

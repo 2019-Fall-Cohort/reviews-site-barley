@@ -22,20 +22,20 @@
 
     <ul>
         <li th:each="beer: ${company.beers}">
-            <a th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
+            <a class = "beer-list" th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
     </ul>
 
     <div class="add-a-beer">
             <form action="/companies/add" method="POST">
-                <label>Beer name
+                <label class = "label-item">Beer name
                         <input type="text" name="beerName"/></label>
-                    <label>Beer style
+                    <label class = "label-item">Beer style
                         <input type="text" name="style"/></label>
-                    <label>Brewery
+                    <label class = "label-item">Brewery
                         <input type="text" name="brewery"/></label>
-                    <label>User Rating
+                    <label class = "label-item">User Rating
                         <input type="text" name="userRating"/></label>
-                <label>Description
+                <label class = "label-item">Description
                     <input type="text" name="beer.userDescription"/></label>
                 <input type="hidden" name="companyId" th:value="${company.id}"/>
     
