@@ -1,14 +1,15 @@
-body {
-    background-image: url("https://assets.simpleviewinc.com/simpleview/image/fetch/q_100/https://assets.simpleviewinc.com/simpleview/image/upload/crm/columbus/1wolf0_6d1226de-5056-a348-3aefb0e56e4711ea.jpg");
-    background-size: cover;
-    overflow: hidden;
-
-}
 .beer-list {
     display: flex;
     grid-gap: 15 px 20 px; 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+}
+
+body {
+    background-image: url("https://assets.simpleviewinc.com/simpleview/image/fetch/q_100/https://assets.simpleviewinc.com/simpleview/image/upload/crm/columbus/1wolf0_6d1226de-5056-a348-3aefb0e56e4711ea.jpg");
+    background-size: cover;
+    overflow: hidden;
+
 }
 
 .footer {
