@@ -1,10 +1,14 @@
 .beer-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     margin: 1rem auto;
+    max-width: 10rem;  
     border-width: 2px;
-    color: orange;                          
+    color: orange;  
+    background-color: black;
+    border-style: solid;
+    border-color: grey;                        
 }
 
 body {
@@ -20,7 +24,14 @@ body {
 
 
 .label-item {
-    color: orange;
+    color: orange; 
+    background-color: black;
+    border-style: solid;
+    border-color: grey;           
+}
+
+.list-of-beers {
+    list-style: none;
 }
 
 .main-header {

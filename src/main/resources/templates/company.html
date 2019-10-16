@@ -20,7 +20,7 @@
     </div>
     <div th:each="beer: ${company.beers}"></div>
 
-    <ul>
+    <ul class = "list-of-beers">
         <li th:each="beer: ${company.beers}">
             <a class = "beer-list" th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
     </ul>
@@ -36,7 +36,7 @@
                     <label class = "label-item">User Rating
                         <input type="text" name="userRating"/></label>
                 <label class = "label-item">Description
-                    <input type="text" name="beer.userDescription"/></label>
+                    <input type="text" name="userDescription"/></label>
                 <input type="hidden" name="companyId" th:value="${company.id}"/>
     
                 <button type="submit">Submit</button>
