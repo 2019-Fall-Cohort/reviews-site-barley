@@ -1,0 +1,58 @@
+
+.masonryblocks{
+    background-color: black;   
+    border-radius: 4%;
+    box-sizing: border-box;
+    border: solid;
+    display: inline-block;
+    color: white;
+    margin: 0 0 15px;
+    opacity: 0.7;
+    padding: 20px;
+    width: 100%;
+}
+
+.masonryblocks:hover{
+    background-color: black;   
+    border-radius: 4%;
+    box-sizing: border-box;
+    border: solid;
+    display: inline-block;
+    color: orange;
+    margin: 0 0 15px;
+    opacity: 0.9;
+    padding: 20px;
+    width: 100%;
+    transition: 2s;
+}
+
+.masonryholder{
+    column-count: 4;
+    column-gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:768px){
+.masonryholder{
+    column-count: 1;
+    }
+}
+    
+@media screen and (min-width:769px){
+.masonryholder{
+    column-count: 2;
+    }
+}
+    
+@media screen and (min-width:1080px){
+.masonryholder{
+    column-count: 3;
+    }
+}
+    
+    @media screen and (min-width:1200px){
+      .masonryholder{
+        column-count: 4;
+      }
+      }
