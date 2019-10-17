@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Explore The Beers</title>
     <link rel="stylesheet" href="/css/beers-style.css">
+    <link rel="stylesheet" href="/css/masonry.css">
 </head>
 
 <body>
@@ -37,9 +38,9 @@
                 <button>Submit</button>
             </form>
             <p>Here's what everyone's saying about this beer:</p>
-            <div class="grid-of-reviews">
+            <div class="masonryholder">
                 <ul th:each="review: ${beer.reviews}">
-                    <li class="generated-review" th:text="${review.reviewText}">Description</li>
+                    <li class="masonryblocks" th:text="${review.reviewText}">Description</li>
                 </ul>
     </div>
 </body>
