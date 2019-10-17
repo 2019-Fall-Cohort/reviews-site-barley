@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet');
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -21,6 +23,10 @@
     background: #b30000; 
 }
 
+/* .back-bottle{
+    background-image: url('/images/smallbottle2.png');
+} */
+
 .beer-attributes {
     list-style-type: none;
     display:flex;
@@ -37,6 +43,8 @@ body {
 }
 
 .boxed {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     border: 1px solid gray;
     border-width: 0.25rem;
@@ -64,6 +72,8 @@ button:hover {
 
 }
 
+
+
 .generated-review {
     background-color: black;
     border: 1px solid gray;
@@ -82,6 +92,18 @@ button:hover {
     grid-template-rows:    1fr 1fr;
     margin: 2rem auto 2rem auto;
     color: rgb(223, 96, 11);;
+}
+
+
+.icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-text{
+    font-family: 'Lobster', cursive;
+
 }
 
 li.list-item {

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet');
+
 .beer-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,6 +26,21 @@ body {
     background-color: black;
 }
 
+.icons {
+    position: relative;
+    right: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-text{
+    position: relative;
+    left: 20px;
+    font-family: 'Lobster', cursive;
+    color: orange;
+}
+
 
 .label-item {
     color: orange; 
@@ -40,8 +59,15 @@ body {
     width: 100%
 } 
 
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .text-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: black;
     border: 1px solid gray;
