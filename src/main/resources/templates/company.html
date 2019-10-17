@@ -12,37 +12,46 @@
 
 <body>
 
-    <div class = "wrapper">
-    <div class="main-header">
-        <div class="text-box">
-        <h1 th:text="${company.name}"></h1>
-    </div>
-    </div>
-    <div th:each="beer: ${company.beers}"></div>
+    <div class="wrapper">
+        <div class="main-header">
+            <div class="text-box">
+                <h1 th:text="${company.name}"></h1>
+                <div class="icons">
+                    <div class="back-bottle">
+                        <p class="icon-text">Back</p>
+                    </div>
+                    <div class="home-keg">
+                        <p class="icon-text">Home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div th:each="beer: ${company.beers}"></div>
 
-    <ul class = "list-of-beers">
-        <li th:each="beer: ${company.beers}">
-            <a class = "beer-list" th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
-    </ul>
+        <ul class="list-of-beers">
+            <li th:each="beer: ${company.beers}">
+                <a class="beer-list" th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
+        </ul>
 
-    <div class="add-a-beer">
+        <div class="add-a-beer">
             <form action="/companies/add" method="POST">
-                <label class = "label-item">Beer name
-                        <input type="text" name="beerName"/></label>
-                    <label class = "label-item">Beer style
-                        <input type="text" name="style"/></label>
-                    <label class = "label-item">Brewery
-                        <input type="text" name="brewery"/></label>
-                    <label class = "label-item">User Rating
-                        <input type="text" name="userRating"/></label>
-                <label class = "label-item">Description
-                    <input type="text" name="userDescription"/></label>
-                <input type="hidden" name="companyId" th:value="${company.id}"/>
-    
+                <label class="label-item">Beer name
+                    <input type="text" name="beerName" /></label>
+                <label class="label-item">Beer style
+                    <input type="text" name="style" /></label>
+                <label class="label-item">Brewery
+                    <input type="text" name="brewery" /></label>
+                <label class="label-item">User Rating
+                    <input type="text" name="userRating" /></label>
+                <label class="label-item">Description
+                    <input type="text" name="userDescription" /></label>
+                <input type="hidden" name="companyId" th:value="${company.id}" />
+
                 <button type="submit">Submit</button>
             </form>
-    </div>
+        </div>
 
-</div>
+    </div>
 </body>
+
 </html>
