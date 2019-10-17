@@ -10,14 +10,6 @@ public class ReviewStorage {
 		@Autowired
 		private ReviewRepository reviewRepo;
 
-		public Review findReview(Long id) {
-			return reviewRepo.findById(id).get();
-		}
-
-		public Iterable<Review> findAllTheReviews() {
-			return reviewRepo.findAll();
-		}
-
 		public void add(Review review) {
 			beerRepo.save(review.getBeer());
 			reviewRepo.save(review);

@@ -17,17 +17,6 @@ public class ReviewController {
 	ReviewStorage reviews;
 	@Resource 
 	BeerCave  beers; 
-	@GetMapping("")
-	public String getReviews(Model model) {
-	model.addAttribute("reviews", reviews.findAllTheReviews());
-		return "reviews";
-	}
-	
-	@RequestMapping("/{id}")
-	public String getReview(@PathVariable ("id") long id, Model model) {
-		model.addAttribute("review", reviews.findReview(id));
-		return "reviews";
-	}
 	
 	@PostMapping("/add")
 	public String addReview(String reviewText, Long beerId){
