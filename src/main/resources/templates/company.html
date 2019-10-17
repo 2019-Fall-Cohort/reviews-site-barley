@@ -13,15 +13,11 @@
 <body>
 
     <div class="wrapper">
-        <div class="main-header">
             <div class="text-box">
                 <h1 th:text="${company.name}"></h1>
                 <div class="icons">
-                    <div class="nav-items" >
                         <img class="back-bottle" src='/images/smallbottle2.png'>
-                            <a class="icon-text" href="/companies">Back</p>
-                    </div>
-                </div>
+                        <a href="/companies">Home</p>
             </div>
         </div>
         <div th:each="beer: ${company.beers}"></div>
@@ -29,7 +25,7 @@
         <ul class="list-of-beers">
             <li th:each="beer: ${company.beers}">
                 <a class="beer-list" th:text="${beer.beerName}" th:href="|/beers/${beer.id}|">Review Page</a></li>
-        </ul>
+        </ul> 
 
         <div class="add-a-beer">
             <form action="/companies/add" method="POST">

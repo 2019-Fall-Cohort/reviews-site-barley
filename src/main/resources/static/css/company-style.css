@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet');
 
+a {
+    color: orange;
+}
 .beer-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -27,20 +30,16 @@ body {
 }
 
 .icons {
-    position: relative;
-    right: 20px;
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.icon-text{
-    position: relative;
-    left: 20px;
+    justify-content: center;
     font-family: 'Lobster', cursive;
-    color: orange;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+}
 
 .label-item {
     color: orange; 
@@ -51,18 +50,6 @@ body {
 
 .list-of-beers {
     list-style: none;
-}
-
-.main-header {
-    display: flex;
-    justify-content: center;
-    width: 100%
-} 
-
-.nav-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 .text-box {
@@ -76,5 +63,5 @@ body {
     color: white;
     margin: auto;
     opacity: 0.7;
-    width: 25%
+    width: 25%;
 }

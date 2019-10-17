@@ -13,13 +13,11 @@
     <main>
         <div class="boxed">
             <h2 class="name-of-brewery" th:text="${beer.beerName}">The given beer name</h2>
-            <!-- <div class="icons">
-            </div> -->
+            <div class="icons">
             <a class="nav-items" href="/companies">
                 <img class="home-keg" src='/images/smallbottle2.png'>
-                <p class="icon-text">Home</p>
+                <p>Home</p>
             </a>
-            </div>
             </div>
         </div>
         <ul class="beer-attributes">
@@ -43,7 +41,7 @@
                 <ul th:each="review: ${beer.reviews}">
                     <li class="generated-review" th:text="${review.reviewText}">Description</li>
                 </ul>
-            </div>
+    </div>
 </body>
 
 </html>

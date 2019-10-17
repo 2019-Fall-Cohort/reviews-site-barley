@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet');
 
-
+a {
+    color: orange;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
@@ -72,8 +74,6 @@ button:hover {
 
 }
 
-
-
 .generated-review {
     background-color: black;
     border: 1px solid gray;
@@ -98,13 +98,10 @@ button:hover {
 .icons {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.icon-text{
+    justify-content: center;
     font-family: 'Lobster', cursive;
-
 }
+
 
 li.list-item {
     margin: 10px;
@@ -121,6 +118,10 @@ li.list-item:hover {
 }
 
 .name-of-brewery {
+    display: flex;
+    justify-content: center;
+}
+.nav-items {
     display: flex;
     justify-content: center;
 }
